@@ -23,7 +23,7 @@ public class RepositoryDetailsTest {
 		String actual = repositorydetails.getUrl();
 		
 		assertNotNull(actual);
-		assertEquals("www.githu", actual);
+		assertEquals("www.github.com", actual);
 	}
 	
 	
