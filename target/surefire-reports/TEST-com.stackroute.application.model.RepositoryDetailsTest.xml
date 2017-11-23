@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.stackroute.application.model.RepositoryDetailsTest" time="0.003" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="com.stackroute.application.model.RepositoryDetailsTest" time="0.009" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -60,5 +60,17 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="testFolderPath" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0.002"/>
-  <testcase name="testUrl" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0.001"/>
+  <testcase name="testUrl" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0.007">
+    <failure message="expected:&lt;www.github[]&gt; but was:&lt;www.github[.com]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<www.github[]> but was:<www.github[.com]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.stackroute.application.model.RepositoryDetailsTest.testUrl(RepositoryDetailsTest.java:26)
+]]></failure>
+    <system-out><![CDATA[13:05:52.559 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+13:05:52.560 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+13:05:52.560 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+13:05:52.560 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+13:05:52.561 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+]]></system-out>
+  </testcase>
 </testsuite>

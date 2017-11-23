@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.stackroute.application.model.RepositoryDetailsTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in com.stackroute.application.model.RepositoryDetailsTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec <<< FAILURE! - in com.stackroute.application.model.RepositoryDetailsTest
+testUrl(com.stackroute.application.model.RepositoryDetailsTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<www.github[]> but was:<www.github[.com]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.stackroute.application.model.RepositoryDetailsTest.testUrl(RepositoryDetailsTest.java:26)
+
