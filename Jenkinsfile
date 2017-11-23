@@ -5,6 +5,7 @@ pipeline {
 			steps {
 			    echo 'hey im test'
 			    sh 'mvn test'
+			    sh 'mvn clean package'
 			}
 		}
 
