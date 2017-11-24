@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.stackroute.application.model.RepositoryDetailsTest" time="0.008" tests="2" errors="0" skipped="0" failures="1">
+<testsuite name="com.stackroute.application.model.RepositoryDetailsTest" time="0.002" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.151-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/vamsi/Desktop/TeamDeployment/Exp/RepoAuthentication"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/vamsi/Desktop/TeamDeployment/Exp/repoAuthentication"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/vamsi/Desktop/TeamDeployment/Exp/RepoAuthentication"/>
+    <property name="user.dir" value="/home/vamsi/Desktop/TeamDeployment/Exp/repoAuthentication"/>
     <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -60,17 +60,5 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="testFolderPath" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0.002"/>
-  <testcase name="testUrl" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0.006">
-    <failure message="expected:&lt;www.github[]&gt; but was:&lt;www.github[.com]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<www.github[]> but was:<www.github[.com]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.stackroute.application.model.RepositoryDetailsTest.testUrl(RepositoryDetailsTest.java:26)
-]]></failure>
-    <system-out><![CDATA[16:12:02.382 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-16:12:02.382 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
-16:12:02.382 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
-16:12:02.382 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-16:12:02.383 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
-]]></system-out>
-  </testcase>
+  <testcase name="testUrl" classname="com.stackroute.application.model.RepositoryDetailsTest" time="0"/>
 </testsuite>
