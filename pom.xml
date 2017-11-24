@@ -4,7 +4,7 @@
   <artifactId>RepoAuthentication</artifactId>
   <version>0.1.0</version>
   <description>An application to connect to either svn, git repo and establish connection to it</description> 
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
     
     <parent>
 		<groupId>org.springframework.boot</groupId>
